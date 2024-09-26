@@ -1,12 +1,15 @@
+import './globals.css';
 import Nav from "./Nav";
 import Footer from "./footer.js";
+import Skill from "./skill";
+import ExpertiseSection from './experties';
 
 export default function Home() {
   return (
     <>
       <Nav />
       <section className="text-gray-700 body-font">
-        <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+        <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center home">
           <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
             <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
               Hi, I'm Daniel Abramiani
@@ -31,68 +34,15 @@ export default function Home() {
             <img
               className="object-cover object-center rounded"
               alt="hero"
-              src="https://cdn.discordapp.com/attachments/1190766523745317038/1287118372512858154/image.png?ex=66f061e5&is=66ef1065&hm=210fd6ebb19496de10891818352739609d849747fc9e0681e410b7931e8c7e7c&"
+              src="https://scontent.ftbs5-2.fna.fbcdn.net/v/t39.30808-6/461070490_1087301609624498_4015968002832859455_n.jpg?stp=cp6_dst-jpg&_nc_cat=110&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=tD3NYPqsb7IQ7kNvgFkf9dd&_nc_ht=scontent.ftbs5-2.fna&_nc_gid=AkI-XRQ1XXdob7R4WrvUIzt&oh=00_AYA54aXGsgUO4iXiOaNW5CsoO5URydw8ARJxD2OCJ9XLdA&oe=66FAFC91"
             />
           </div>
         </div>
       </section>
 
-      <div className="bg-gray-100 p-8" id="about">
-        <h2 className="text-2xl font-bold text-gray-900 text-center mb-4">
-          About Me
-        </h2>
-        <p className="text-gray-700 text-center">
-          I started learning programming at GOA (Goal-oriented Academy) in September 2023.
-          <br />
-          Then I began learning by myself.
-          <br />
-          Work Experience: Editor at Anjalytics (January 2024 - July 2024), Crew Leader at GOA (April 2024 - September 2024), Mentor Assistant at GOA (September 2024).
-        </p>
-      </div>
+      <ExpertiseSection />
 
-      <section className="bg-white py-16" id="skills">
-        <h2 className="text-2xl font-bold text-gray-900 text-center mb-8">
-          My Skills
-        </h2>
-        <div className="container mx-auto px-5">
-          <div className="flex flex-wrap -m-4">
-            <div className="p-4 md:w-1/3">
-              <div className="h-full bg-blue-500 p-8 rounded transition duration-500 transform hover:bg-purple-500 hover:-translate-y-2 hover:text-white-900">
-                <p className="leading-relaxed mb-6">
-                  React + Tailwind: started learning React and Tailwind in September.
-                </p>
-                <h2 className="text-white-900 font-medium title-font tracking-wider text-sm">
-                  React + Tailwind
-                </h2>
-                <p className="text-white-500">Mastering Front-end</p>
-              </div>
-            </div>
-            <div className="p-4 md:w-1/3">
-              <div className="h-full bg-blue-500 p-8 rounded transition duration-500 transform hover:bg-purple-500 hover:-translate-y-2 hover:text-white-500" >
-                <p className="text-white-400 leading-relaxed mb-6">
-                  CSS, JS, HTML: started learning in January.
-                </p>
-                <h2 className="text-white-900 font-medium title-font tracking-wider text-sm">
-                  CSS, HTML, JS
-                </h2>
-                <p className="text-white-500">Beginning of front-end development</p>
-              </div>
-            </div>
-            <div className="p-4 md:w-1/3" >
-              <div className="h-full bg-blue-500 p-8 rounded transition duration-500 transform hover:bg-purple-500 hover:-translate-y-2 hover:text-white-500">
-                <p className="leading-relaxed mb-6">
-                  Python: Learning Python in September 2023; I can create my own
-                  kata in Codewars and achieved 4 kyu.
-                </p>
-                <h2 className="text-white-900 font-medium title-font tracking-wider text-sm">
-                  Python
-                </h2>
-                <p className="text-white-500">Mastering Python</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Skill />
 
       <section className="text-gray-700 body-font relative" id="contact">
         <div className="container px-5 py-24 mx-auto">
@@ -150,7 +100,7 @@ export default function Home() {
                 </button>
               </div>
               <div className="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
-                <a className="text-indigo-500" href="mailto:danielabramiani6@email.com">danielabramiani6@email.com</a>
+                <a className="text-indigo-500" href="mailto:danielabramiani6@email.com">danielabramiani6@gmail.com</a>
                 <p className="leading-normal my-5">
                   Phone number: +995 557 520 755
                   <br />
@@ -175,7 +125,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       <Footer />
     </>
   );
